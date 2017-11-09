@@ -1,3 +1,6 @@
 # General Compiled Files
 *.sym
 *.obj
+
+# MacOS Specific
+.DS_Store
