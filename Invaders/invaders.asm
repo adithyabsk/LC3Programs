@@ -635,7 +635,7 @@ KBSR	.FILL xFE00 ; keyboard status register; KBSR[15] is 1 when new char is reci
 KBDR	.FILL xFE02 ; value of recieved keypress
 TMR		.FILL xFE08	; timer register; TMR[15] is one when the timer is up
 TMI		.FILL xFE0A ; sets number milliseconds between ticks, 0 for timer off
-TICKS	.FILL x00C8 ; 1500 milliseconds between ticks
+TICKS	.FILL x00C8 ; 500 milliseconds between ticks
 
 ;; DRAW_SQUARE
 ; Takes a start address, a width, a length, and a color

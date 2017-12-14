@@ -1,4 +1,5 @@
-# LC3Programs
+# LC3 Programs
+Below are a few programs that were used to learn the LC3 architecture and assembly programming system.
 
 ## General Note
 Note make sure to open the PennSim jar within the folder where the code exists.  
@@ -13,8 +14,8 @@ Inside the PennSim applicaton run:
 script {PROGRAM_NAME}_script.txt
 ```
 
-## AddOne Program
-![AddOddDemo](Media/AddOddDemo.gif "Demo of output from the AddOdd program")  
+## Add Odd Program
+![AddOddDemo](Media/AddOddDemo.gif "Demo of Add Odd program")  
 This program adds all the odd numbers between two user inputs and prints out the sum. The program can take each input from 1-99 and halts if the second number is less than the first number. Jump statements were not allowed during the implementation of the program and resulted in the quirky implementation using "routing" unconditional branch sections.
 
 ## Histogram Program
@@ -26,3 +27,21 @@ The helper python script generates testing data for the program:
 ```  
 The script tests the scaling functionality (TEST_CASE = 1 and 2) and also generates random data (TEST_CASE = 0) which is pictured above.  
 Note: the .asm for this specific lc3 os which makes the display accessible was not made available.
+
+## Invaders Program
+![Histogram](Media/InvadersDemo.gif "Demo of Invaders program")  
+This program emulates the popular space invaders game on the lc3 platform. The ship is controlled with AD for left and right and space to shoot a laser. Below is a table listing the game's controls.  
+
+| Keypress | Result                      |
+|----------|-----------------------------|
+| a        | Move ship left              |
+| d        | Move ship right             |
+| space    | Shoot laser                 |
+| q        | Quit game                   |
+| r        | Change ship color to red    |
+| g        | Change ship color to green  |
+| b        | Change ship color to blue   |
+| y        | Change ship color to yellow |
+| w        | Change ship color to white  |  
+
+When a laser hits a ship the ship's color changes from blue to red. When all four ships have been hit the program halts and prints GAMEOVER into the console.
